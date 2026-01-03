@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SSD Jewellers Admin Panel</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="login-box" id="loginBox">
+    <h2>Admin Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<div class="dashboard" id="dashboard">
+    <h1>SSD Jewellers – Admin Panel</h1>
+
+    <div class="card">
+        <h3>Add New Application</h3>
+        <input type="text" id="name" placeholder="Customer Name">
+        <input type="text" id="mobile" placeholder="Mobile Number">
+        <input type="number" id="amount" placeholder="Application Fee">
+        <button onclick="addEntry()">Add Entry</button>
+    </div>
+
+    <div class="card">
+        <h3>Applications List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="dataTable"></tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <button class="draw" onclick="drawWinner()">🎉 Draw Winner</button>
+        <h2 id="winner"></h2>
+    </div>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
