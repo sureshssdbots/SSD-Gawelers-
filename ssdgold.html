@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SSD Jewellers | Special Gold Offer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1a1a1a, #3a2c00);
+            color: #fff;
+        }
+
+        header {
+            padding: 15px 30px;
+            background: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: gold;
+            margin: 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1611078489935-0cb964de46d6') center/cover;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            color: gold;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .apply-box {
+            margin-top: 30px;
+            background: rgba(0,0,0,0.7);
+            padding: 25px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .apply-box h3 {
+            color: #ffd700;
+        }
+
+        .apply-box button {
+            background: gold;
+            color: #000;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: gold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .step {
+            background: #111;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        footer {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #aaa;
+        }
+
+        .tc {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SSD Jewellers</h1>
+    <nav>
+        <a href="#offer">Offer</a>
+        <a href="#how">How It Works</a>
+        <a href="#terms">T&C</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="offer">
+    <h2>₹5 Crore Gold at Special Rate</h2>
+    <p>Apply & Get a Chance to Purchase Gold at ₹7,000 / 10 Gram</p>
+
+    <div class="apply-box">
+        <h3>Application Fee: ₹1000 Only</h3>
+        <p>Limited Applications Available</p>
+        <button onclick="applyNow()">APPLY NOW</button>
+    </div>
+</div>
+
+<section id="how">
+    <h2>How It Works</h2>
+    <div class="steps">
+        <div class="step">
+            <h3>Step 1</h3>
+            <p>Apply with ₹1000 application fee</p>
+        </div>
+        <div class="step">
+            <h3>Step 2</h3>
+            <p>Lucky draw conducted transparently</p>
+        </div>
+        <div class="step">
+            <h3>Step 3</h3>
+            <p>Selected customer can buy gold at special rate</p>
+        </div>
+        <div class="step">
+            <h3>Step 4</h3>
+            <p>Proper invoice & documentation provided</p>
+        </div>
+    </div>
+</section>
+
+<section id="terms">
+    <h2>Terms & Conditions</h2>
+    <div class="tc">
+        <ul>
+            <li>This is a promotional purchase offer, not a lottery.</li>
+            <li>Application fee is non-refundable.</li>
+            <li>Only selected participant can purchase gold at special rate.</li>
+            <li>GST, making charges & applicable taxes extra.</li>
+            <li>Gold will be sold with proper invoice and compliance.</li>
+            <li>SSD Jewellers reserves the right to modify or cancel the offer.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">
+        📍 SSD Jewellers, India <br>
+        📞 +91 XXXXXXXXXX <br>
+        📧 ssdjewellers@gmail.com
+    </p>
+</section>
+
+<footer>
+    © 2026 SSD Jewellers | All Rights Reserved
+</footer>
+
+<script>
+    function applyNow() {
+        alert("Thank you for applying!\nOur team will contact you shortly.");
+    }
+</script>
+
+</body>
+</html>
